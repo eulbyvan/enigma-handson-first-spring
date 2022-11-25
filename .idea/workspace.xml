@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4338414-4bc3-4b6c-b70b-a16d68bbf4ab" name="Changes" comment="CourseService change into interface">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
+    <list default="true" id="e4338414-4bc3-4b6c-b70b-a16d68bbf4ab" name="Changes" comment="Spring ApplicationContext.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/config/BeanConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/service/ICourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/service/ICourseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +17,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="01-Using-Interface" />
+        <entry key="$PROJECT_DIR$" value="02-Simple-IoC-XML" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669339591303</updated>
-      <workItem from="1669339593533" duration="3211000" />
+      <workItem from="1669339593533" duration="3817000" />
     </task>
     <task id="LOCAL-00001" summary="First Spring hands on">
       <created>1669342772909</created>
@@ -98,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669343124937</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Spring ApplicationContext.xml">
+      <created>1669344287259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669344287259</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +124,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Spring hands on" />
     <MESSAGE value="CourseService change into interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="CourseService change into interface" />
+    <MESSAGE value="Spring ApplicationContext.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring ApplicationContext.xml" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

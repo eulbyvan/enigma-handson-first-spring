@@ -1,10 +1,9 @@
 package com.enigmacamp.firstspring;
 
+import com.enigmacamp.firstspring.config.BeanConfiguration;
 import com.enigmacamp.firstspring.entity.Course;
-import com.enigmacamp.firstspring.service.CourseService;
 import com.enigmacamp.firstspring.service.ICourseService;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;
 
@@ -21,8 +20,10 @@ public class App {
 //        Untuk menggunakan spring bean di class yang membutuhkan, kita gunakan
 //        Spring Context
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-        ICourseService courseService = (ICourseService) context.getBean("courseService");
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        ctx.register(BeanConfiguration.class);
+        ctx.refresh();
+        ICourseService courseService = ctx.getBean(ICourseService.class);
 
         Course springCourse = new Course();
         springCourse.setCourseId("123");
