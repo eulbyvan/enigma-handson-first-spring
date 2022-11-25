@@ -1,29 +1,27 @@
 package com.enigmacamp.firstspring.service;
 
 import com.enigmacamp.firstspring.entity.Course;
+import com.enigmacamp.firstspring.repository.ICourseRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CourseService implements ICourseService {
-    private List<Course> courseList = new ArrayList<>();
+    private ICourseRepository courseRepository;
+
+    public CourseService(ICourseRepository courseRepository) {
+        this.courseRepository = courseRepository;
+    }
 
     public Course create(Course course) {
-        courseList.add(course);
-        return course;
+        return courseRepository.create(course);
     }
 
     public List<Course> list() {
-        return courseList;
+        return courseRepository.getAll();
     }
 
     public Course getOne(String id) {
-        Course course = null;
-        for (Course c : courseList) {
-            if (c.getCourseId().equals(id)) {
-                course = c;
-            }
-        }
-        return course;
+        return courseRepository.findOne(id);
     }
 }
