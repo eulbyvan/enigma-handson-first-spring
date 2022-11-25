@@ -5,7 +5,7 @@ import com.enigmacamp.firstspring.entity.Course;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CourseService {
+public class CourseService implements ICourseService {
     private List<Course> courseList = new ArrayList<>();
 
     public Course create(Course course) {
