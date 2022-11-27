@@ -2,12 +2,13 @@ package com.enigmacamp.firstspring.service;
 
 import com.enigmacamp.firstspring.entity.Course;
 import com.enigmacamp.firstspring.repository.ICourseRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CourseService implements ICourseService {
-    private ICourseRepository courseRepository;
+    ICourseRepository courseRepository;
 
     public CourseService(ICourseRepository courseRepository) {
         this.courseRepository = courseRepository;

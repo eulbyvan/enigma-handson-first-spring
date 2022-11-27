@@ -1,11 +1,16 @@
 package com.enigmacamp.firstspring.repository;
 
 import com.enigmacamp.firstspring.entity.Course;
+import com.enigmacamp.firstspring.util.IRandomStringGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CourseArrayRepository implements ICourseRepository {
+
+    @Autowired
+    IRandomStringGenerator randomStringGenerator;
     private List<Course> courseList = new ArrayList<>();
 
     @Override
@@ -15,6 +20,7 @@ public class CourseArrayRepository implements ICourseRepository {
 
     @Override
     public Course create(Course course) {
+        course.setCourseId(randomStringGenerator.random());
         courseList.add(course);
         return course;
     }
