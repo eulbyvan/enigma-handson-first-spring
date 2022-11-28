@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4338414-4bc3-4b6c-b70b-a16d68bbf4ab" name="Changes" comment="Field Injection">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/util/RandomInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
+    <list default="true" id="e4338414-4bc3-4b6c-b70b-a16d68bbf4ab" name="Changes" comment="Qualifier &amp; property source">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/ConsoleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/container/AppContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/container/ConsoleRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/config/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/config/BeanConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/repository/CourseArrayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/repository/CourseArrayRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/util/RandomInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/util/RandomInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/util/UuidGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enigmacamp/firstspring/util/UuidGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Go File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -30,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="04-Field-Injection" />
+        <entry key="$PROJECT_DIR$" value="05-Qualifier" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,7 +116,7 @@
       <workItem from="1669427198243" duration="1234000" />
       <workItem from="1669515956462" duration="235000" />
       <workItem from="1669522349492" duration="725000" />
-      <workItem from="1669593973910" duration="6098000" />
+      <workItem from="1669593973910" duration="12937000" />
     </task>
     <task id="LOCAL-00001" summary="First Spring hands on">
       <created>1669342772909</created>
@@ -154,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669526304000</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Qualifier &amp; property source">
+      <created>1669609104505</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669609104505</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +191,8 @@
     <MESSAGE value="Spring Config java based" />
     <MESSAGE value="Constructor Injection" />
     <MESSAGE value="Field Injection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Field Injection" />
+    <MESSAGE value="Qualifier &amp; property source" />
+    <option name="LAST_COMMIT_MESSAGE" value="Qualifier &amp; property source" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
